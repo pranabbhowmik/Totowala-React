@@ -13,7 +13,7 @@ import appstore from "../../assets/app-store-apple-f1f919205b.jpg";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#FFFF25] px-4 py-8 md:px-6 lg:px-8">
+      <footer className="bg-[#FFFF25] px-5 font-robotoMono py-8 md:px-6 lg:px-8">
         <div className="container mx-auto max-w-7xl">
           <div className="mb-8 flex flex-col items-center md:flex-row md:items-center cursor-pointer md:gap-4">
             <Link to="/">
@@ -29,86 +29,68 @@ const Footer = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid grid-cols-2 px-4 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {/* Company Column */}
             <div>
-              <h3 className="mb-4 font-semibold">Company</h3>
+              <h3 className="mb-4 font-semibold text-lg">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about" className="hover:underline">
-                    About Us
-                  </Link>
+                  <p className="hover:underline text-gray-800">About Us</p>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Blog
-                  </a>
+                  <p className="hover:underline text-gray-600">Blog</p>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Toto Pass
-                  </a>
+                  <p className="hover:underline text-gray-600">Toto Pass</p>
                 </li>
               </ul>
             </div>
 
             {/* Products Column */}
             <div>
-              <h3 className="mb-4 font-semibold">Products</h3>
+              <h3 className="mb-4 font-semibold text-lg">Products</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
-                    Ride
-                  </a>
+                  <p className="hover:underline text-gray-600">Ride</p>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Drive
-                  </a>
+                  <p className="hover:underline text-gray-600">Drive</p>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Delivery
-                  </a>
+                  <p className="hover:underline text-gray-600">Delivery</p>
                 </li>
               </ul>
             </div>
 
             {/* Global Citizenship Column */}
             <div>
-              <h3 className="mb-4 font-semibold">Global citizenship</h3>
+              <h3 className="mb-4 font-semibold text-lg">Global Citizenship</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
-                    Safety
-                  </a>
+                  <p className="hover:underline text-gray-600">Safety</p>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <p className="hover:underline text-gray-600">
                     Diversity and Inclusion
-                  </a>
+                  </p>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <p className="hover:underline text-gray-600">
                     Sustainability
-                  </a>
+                  </p>
                 </li>
               </ul>
             </div>
 
             {/* Travel Column */}
             <div>
-              <h3 className="mb-4 font-semibold">Travel</h3>
+              <h3 className="mb-4 font-semibold text-lg">Travel</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:underline">
-                    Airports
-                  </a>
+                  <p className="hover:underline text-gray-600">Airports</p>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Cities
-                  </a>
+                  <p className="hover:underline text-gray-600">Cities</p>
                 </li>
               </ul>
             </div>
@@ -116,40 +98,40 @@ const Footer = () => {
 
           <div className="mt-12 flex flex-col items-center justify-between gap-8 border-t border-black/10 pt-8 md:flex-row">
             <div className="flex flex-col items-center gap-4 md:flex-row">
-              <p className="text-center md:text-left">Download Now</p>
+              <p className="text-center font-bold md:text-left">Download Now</p>
               <div className="flex gap-4">
-                <a href="#" className="h-10">
+                <p className="h-10">
                   <img
                     src={playstore}
                     alt="Get it on Google Play"
                     className="h-full"
                   />
-                </a>
-                <a href="#" className="h-10">
+                </p>
+                <p className="h-10">
                   <img
                     src={appstore}
                     alt="Download on the App Store"
                     className="h-full"
                   />
-                </a>
+                </p>
               </div>
             </div>
 
             <div className="flex flex-col items-center gap-4 md:flex-row">
               <p className="font-semibold">Follow Us</p>
               <div className="flex gap-4">
-                <a href="#" className="text-black hover:text-black/70">
+                <p className="text-black hover:text-black/70">
                   <FaFacebookF className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-black hover:text-black/70">
+                </p>
+                <p className="text-black hover:text-black/70">
                   <FaInstagram className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-black hover:text-black/70">
+                </p>
+                <p className="text-black hover:text-black/70">
                   <FaLinkedinIn className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-black hover:text-black/70">
+                </p>
+                <p className="text-black hover:text-black/70">
                   <FaYoutube className="h-6 w-6" />
-                </a>
+                </p>
               </div>
             </div>
 
