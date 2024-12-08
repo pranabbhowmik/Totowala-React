@@ -9,6 +9,7 @@ import Ride from "./pages/Ride";
 import "./App.css";
 import Applayout from "./components/layout/Applayout";
 import Bookride from "./pages/Bookride";
+import Login from "./pages/Login";
 
 function App() {
   const router = createBrowserRouter([
@@ -43,6 +44,10 @@ function App() {
         {
           path: "/book",
           element: <Bookride />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
       ],
     },

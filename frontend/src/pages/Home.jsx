@@ -46,8 +46,8 @@ const Home = () => {
                 Affordable Toto rides at your Doorstep
               </h2>
               <NavLink to={"/book"}>
-                <button className="bg-black mt-2 text-yellow-400 px-6 md:px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-110 hover:bg-yellow-300 hover:text-black">
-                  Request a ride
+                <button class="before:ease relative h-12 w-40 mt-3 bg-blue-500 overflow-hidden border border-black text-white shadow-2xl transition-all rounded-xl before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-[#FFFF25] before:duration-300 hover:text-black hover:shadow-[#FFFF25] hover:before:h-64 hover:before:-translate-y-32">
+                  <span class="relative z-10">Request a Ride</span>
                 </button>
               </NavLink>
             </div>
@@ -98,8 +98,13 @@ const Home = () => {
 
             {/* Button */}
             <Link to={"/book"}>
-              <button className="rounded-full bg-yellow-400 px-8 py-3 font-semibold shadow-[0_4px_0_0_rgba(0,0,0,0.2)] transition-all hover:translate-y-0.5 hover:shadow-[0_2px_0_0_rgba(0,0,0,0.2)] active:translate-y-1 active:shadow-none ring-1 ring-blue-300">
-                Book Now
+              <button class="group relative inline-flex items-center justify-start overflow-hidden rounded-full px-5 mt-3 py-3 font-bold bg-blue-500">
+                <span class="absolute left-0 top-0 h-32 w-32 -translate-y-2 translate-x-12 rotate-45 bg-[#FFFF25] opacity-[3%]"></span>
+                <span class="absolute left-0 top-0 -mt-1 h-48 w-48 -translate-x-56 -translate-y-24 rotate-45 bg-[#FFFF25] opacity-100 transition-all duration-500 ease-in-out group-hover:-translate-x-8"></span>
+                <span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
+                  Book Now
+                </span>
+                <span class="absolute inset-0 rounded-full border-2 border-black"></span>
               </button>
             </Link>
           </div>
@@ -145,7 +150,7 @@ const Home = () => {
             <div className="flex flex-col md:flex-row items-center sm:space-x-52 space-x-0 space-y-5">
               {/* Logo and Text Section */}
               <div className="text-center md:text-left">
-                <div className="rounded-full p-4 inline-block mb-4 bg-gray-100 ml-0 sm:ml-5">
+                <div className="rounded-full p-4 inline-block mb-4  ml-0 sm:ml-5">
                   <img
                     src={passlogo}
                     alt="Toto Pass Logo"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 
 const Navbar = () => {
@@ -94,9 +94,11 @@ const Navbar = () => {
 
         {/* Auth buttons */}
         <div className="hidden items-center space-x-4 md:flex">
-          <button className="rounded-md bg-white px-3 py-2 text-sm font-medium text-black hover:bg-gray-100 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            Log In
-          </button>
+          <Link to={"/login"}>
+            <button className="rounded-md bg-white px-3 py-2 text-sm font-medium text-black hover:bg-gray-100 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              Log In
+            </button>
+          </Link>
           <button className="rounded-md bg-black px-3 py-2 text-sm font-medium text-white hover:bg-gray-800 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
             Sign Up
           </button>
@@ -150,9 +152,11 @@ const Navbar = () => {
                 Help
               </NavLink>
               <div className="flex flex-col space-y-2">
-                <button className="w-full rounded-md bg-white px-3 py-2 text-xl font-medium text-black hover:bg-gray-100">
-                  Log In
-                </button>
+                <Link to={"/login"}>
+                  <button className="w-full rounded-md bg-white px-3 py-2 text-xl font-medium text-black hover:bg-gray-100">
+                    Log In
+                  </button>
+                </Link>
                 <button className="w-full rounded-md bg-black px-3 py-2 text-xl font-medium text-white hover:bg-gray-800">
                   Sign Up
                 </button>
