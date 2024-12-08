@@ -99,9 +99,11 @@ const Navbar = () => {
               Log In
             </button>
           </Link>
-          <button className="rounded-md bg-black px-3 py-2 text-sm font-medium text-white hover:bg-gray-800 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            Sign Up
-          </button>
+          <Link to={"/signup"}>
+            <button className="rounded-md bg-black px-3 py-2 text-sm font-medium text-white hover:bg-gray-800 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              Sign Up
+            </button>
+          </Link>
         </div>
 
         {/* Mobile menu */}
@@ -157,9 +159,11 @@ const Navbar = () => {
                     Log In
                   </button>
                 </Link>
-                <button className="w-full rounded-md bg-black px-3 py-2 text-xl font-medium text-white hover:bg-gray-800">
-                  Sign Up
-                </button>
+                <Link to={"/signup"}>
+                  <button className="w-full rounded-md bg-black px-3 py-2 text-xl font-medium text-white hover:bg-gray-800">
+                    Sign Up
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

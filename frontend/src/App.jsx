@@ -10,6 +10,7 @@ import "./App.css";
 import Applayout from "./components/layout/Applayout";
 import Bookride from "./pages/Bookride";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   const router = createBrowserRouter([
@@ -48,6 +49,10 @@ function App() {
         {
           path: "/login",
           element: <Login />,
+        },
+        {
+          path: "/signup",
+          element: <Signup />,
         },
       ],
     },

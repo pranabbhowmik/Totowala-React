@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/logo.jpeg";
 const Login = () => {
   return (
-    <div className="flex flex-col items-center justify-center sm:min-h-screen bg-gray-100">
+    <div className="flex flex-col font-robotoMono items-center justify-center sm:min-h-screen bg-gray-100">
       <div className="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-ful">
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center bg-[#FFFF25] p-6  text-center">
