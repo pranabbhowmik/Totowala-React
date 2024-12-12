@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "../assets/logo.jpeg";
+import { NavLink } from "react-router-dom";
 
 const Signup = () => {
   return (
-    <div className="flex flex-col font-robotoMono px-6 items-center justify-center sm:min-h-screen bg-gray-100">
+    <div className="flex flex-col font-robotoMono items-center justify-center sm:min-h-screen bg-gray-100">
       <div className="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-full">
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center bg-[#FFFF25] p-6 text-center">
@@ -94,6 +95,13 @@ const Signup = () => {
             <button className="before:ease relative h-12 w-full mt-3 bg-blue-500 overflow-hidden border border-black text-white shadow-2xl transition-all rounded-xl before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-[#FFFF25] before:duration-300 hover:text-black hover:shadow-[#FFFF25] hover:before:h-64 hover:before:-translate-y-32">
               <span className="relative z-10">Sign Up</span>
             </button>
+            <NavLink
+              to={"/login"}
+              className="block mt-4 text-center text-sm text-gray-700 hover:underline hover:text-blue-500 transition"
+            >
+              Already have an account?{" "}
+              <span className="font-robotoMono">Log in</span>
+            </NavLink>
             <p className="text-xs text-gray-500 mt-4 text-center">
               By signing up, you agree to Totowala's{" "}
               <span className="text-blue-600 cursor-pointer hover:underline">

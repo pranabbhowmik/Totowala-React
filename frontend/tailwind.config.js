@@ -5,7 +5,7 @@ export default {
     extend: {
       keyframes: {
         "trans-right": {
-          "0%, 100%": { transform: "translateX(60px)" },
+          "0%, 100%": { transform: "translateX(40px)" },
           "50%": { transform: "translateX(0)" },
         },
       },
