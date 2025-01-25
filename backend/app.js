@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import authrouter from "./router/user.router.js";
 const app = express();
 
 app.use(cors());
@@ -12,5 +13,8 @@ app.use(cookieParser());
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+
+// routing
+app.use("/api/auth", authrouter);
 
 export default app;
