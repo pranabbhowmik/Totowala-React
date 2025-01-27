@@ -17,11 +17,13 @@ const register = async (req, res) => {
         .json({ message: "Password must be at least 6 characters long" });
     }
     const hashedPassword = await User.hashPassword(password);
+    const avtar = `https://avatar.iran.liara.run/username?username=${fullname}`;
     const newUser = new User({
       fullname,
       email,
       phone,
       password: hashedPassword,
+      avtar,
     });
     await newUser.save();
     const token = await newUser.generateAuthToken();

@@ -23,6 +23,9 @@ const userSchema = new mongoose.Schema(
       required: true,
       select: false,
     },
+    avtar: {
+      type: String,
+    },
     socketId: {
       type: String,
     },

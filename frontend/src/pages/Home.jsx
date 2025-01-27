@@ -53,11 +53,11 @@ const Home = () => {
             </div>
 
             {/* Image with animation */}
-            <div className="w-full md:w-1/2 max-w-md mx-auto">
+            <div className="w-full md:w-1/2 max-w-sm mx-auto">
               <img
                 src={toto}
                 alt="Toto Ride Illustration"
-                className="w-full h-auto max-w-[600px] mx-auto animate-trans-right"
+                className="w-full h-auto max-w-[300px] mx-auto animate-trans-right"
               />
             </div>
           </div>
@@ -70,7 +70,7 @@ const Home = () => {
             autoPlay
             loop
             muted
-            className="w-full max-h-[400px] md:max-h-[600px] object-cover"
+            className="w-full max-h-[250px] md:max-h-[400px] lg:max-h-[600px] object-cover"
           ></video>
         </div>
         <div className="bg-white mt-5 flex flex-col items-center justify-center px-4">
