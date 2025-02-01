@@ -195,7 +195,7 @@ const Contact = () => {
                 ></div>
 
                 {/* Caption for the Map */}
-                <div className="text-sm bg-gray-900 text-white px-3 py-1 rounded-md inline-block absolute top-2/4 left-2/3">
+                <div className="text-sm bg-gray-900 text-white px-3 py-1 rounded-md inline-block absolute top-2/4 left-[60.66%] sm:left-2/3">
                   We are here
                 </div>
 
