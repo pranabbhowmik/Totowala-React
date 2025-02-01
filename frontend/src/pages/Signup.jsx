@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/logo.jpeg";
 import { NavLink } from "react-router-dom";
 
 const Signup = () => {
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
+  }, []);
   return (
     <div className="flex flex-col font-robotoMono items-center justify-center sm:min-h-screen bg-gray-100">
       <div className="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-full">

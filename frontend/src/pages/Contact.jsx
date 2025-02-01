@@ -20,6 +20,7 @@ const Contact = () => {
       phone: "",
       message: "",
     });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className="min-h-screen font-robotoMono bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">

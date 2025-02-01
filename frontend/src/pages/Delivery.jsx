@@ -54,6 +54,16 @@ const Delivery = () => {
         }
       }, duration);
     });
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
   }, []);
   return (
     <div className="min-h-screen bg-white font-robotoMono">

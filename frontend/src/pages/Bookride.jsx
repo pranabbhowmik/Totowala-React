@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MapPin, Plus, Clock, User, Search } from "lucide-react";
 import { FaCar, FaBox, FaSyncAlt, FaShuttleVan } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -8,7 +8,18 @@ const Bookride = () => {
     { icon: <FaCar />, label: "Ride" },
     { icon: <FaBox />, label: "Package" },
   ];
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
 
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0); // Adjust the delay if needed
+  }, []);
   return (
     <div className="flex flex-col lg:flex-row h-screen">
       {/* Left Panel */}

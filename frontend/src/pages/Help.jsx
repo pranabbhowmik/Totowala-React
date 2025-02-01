@@ -1,7 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import girl from "../assets/girl.png";
 const Help = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0); // Adjust the delay if needed
+  }, []);
+
   const topics = [
     { id: 1, title: "Help with a trip", icon: "🚗" },
     { id: 2, title: "Account", icon: "👤" },

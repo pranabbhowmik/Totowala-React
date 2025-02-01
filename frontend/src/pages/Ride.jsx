@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ride from "../assets/ride.jpg";
 import { BsEmojiSmile } from "react-icons/bs";
 import {
@@ -14,6 +14,18 @@ import pass1 from "../assets/pass-15off23feb21.jpg";
 import pass2 from "../assets/pass-15off24feb21.jpg";
 import waitingimage from "../assets/waiting.jpg";
 const Ride = () => {
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
+  }, []);
   return (
     <div className="min-h-screen font-robotoMono bg-white">
       {/* Hero Section */}

@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsEmojiSmile } from "react-icons/bs";
 import aboutimg from "../assets/about.jpg";
 import visionImage from "../assets/vision1.jpg";
 import missionImage from "../assets/vision2.png";
 
 const About = () => {
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0); // Adjust the delay if needed
+  }, []);
   return (
     <div className="min-h-screen bg-white font-robotoMono">
       {/* Hero Section */}

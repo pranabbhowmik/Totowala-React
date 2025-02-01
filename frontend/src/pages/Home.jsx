@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import toto from "../assets/TOTO.jpg";
 import { Link, NavLink } from "react-router-dom";
 import Totovideo from "../assets/Totowala.mp4";
@@ -32,6 +32,19 @@ const cities = [
 ];
 
 const Home = () => {
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0); // Adjust the delay if needed
+  }, []);
+
   return (
     <>
       <div className="bg-white min-h-screen w-full px-4 font-robotoMono scroll-smooth">
