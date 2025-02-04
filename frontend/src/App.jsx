@@ -12,6 +12,9 @@ import Bookride from "./pages/Bookride";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import RidePicker from "./components/ui/RidePicker";
+import Wallet from "./pages/Wallet";
+
+
 
 function App() {
   const router = createBrowserRouter([
@@ -56,9 +59,13 @@ function App() {
           element: <Signup />,
         },
         {
-          path: "pickup",
+          path: "/pickup",
           element: <RidePicker />,
         },
+        {
+          path: "/wallet",
+          element:<Wallet />
+        }
       ],
     },
   ]);
