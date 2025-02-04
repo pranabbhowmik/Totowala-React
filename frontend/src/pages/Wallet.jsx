@@ -1,4 +1,4 @@
-import { ChevronLeft } from "lucide-react"
+import { ChevronLeft, Plus } from "lucide-react"
 import logo from "../assets/logo.jpeg"
 import { useNavigate } from "react-router-dom"
 
@@ -84,7 +84,7 @@ const Wallet = () => {
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
           </svg>
-          <span className="group-hover:text-yellow-600 transition-colors duration-300">Add Payment Methods</span>
+          <button className="group-hover:text-yellow-600 transition-colors duration-300">Add Payment Methods</button>
         </div>
         <div className="w-full h-[2px] bg-gray-200 my-6"></div>
       </div>
@@ -136,17 +136,8 @@ const Wallet = () => {
         </h2>
 
         <div className="flex items-center gap-4 text-lg font-robotoMono group cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-8 h-8 bg-yellow-100 p-1 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:bg-yellow-200"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-          <span className="group-hover:text-yellow-600 transition-colors duration-300">Add Vouchers</span>
+        <Plus className="w-8 h-8 bg-yellow-100 p-1 rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300 group-hover:bg-yellow-200"/>
+          <button className="group-hover:text-yellow-600 transition-colors duration-300">Add Vouchers</button>
         </div>
       </div>
     </div>
