@@ -11,7 +11,7 @@ const Account = () => {
                 {/* Profile Section */}
                 <div className="p-6 bg-amber-50">
                     <h1 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-800 hover:text-yellow-600 transition-colors duration-300 font-mono">
-                        Welcome, Madhumita
+                        Welcome, Pranab
                     </h1>
                     
                     {/* Profile Picture */}
@@ -31,7 +31,7 @@ const Account = () => {
                             </button>
                         </div>
                         
-                        <h3 className="mt-4 text-xl font-bold text-gray-800 font-mono">Madhumita Das</h3>
+                        <h3 className="mt-4 text-xl font-bold text-gray-800 font-mono">Pranab Bhowmik</h3>
                         <button className="mt-3 px-3 py-2 bg-blue-500 text-white rounded-full font-semibold transition-all duration-300 hover:bg-yellow-400 hover:text-black hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2 font-mono">
                             Edit Profile
                         </button>
@@ -45,7 +45,7 @@ const Account = () => {
                         <div className="group">
                             <label className="text-sm font-medium text-gray-500 font-mono">Phone Number</label>
                             <div className="flex items-center justify-between p-3 mt-1 rounded-lg group-hover:bg-yellow-50 transition-all duration-300">
-                                <span className="text-gray-800 font-medium font-mono">+91 8653424874</span>
+                                <span className="text-gray-800 font-medium font-mono">+91 86XXXXXXXX</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 group-hover:text-yellow-500 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="m9 18 6-6-6-6"/>
                                 </svg>
@@ -56,7 +56,7 @@ const Account = () => {
                         <div className="group">
                             <label className="text-sm font-medium text-gray-500 font-mono">Email</label>
                             <div className="flex items-center justify-between p-3 mt-1 rounded-lg group-hover:bg-yellow-50 transition-all duration-300">
-                                <span className="text-gray-800 font-medium font-mono text-sm md:text-base">madhumita011das@gmail.com</span>
+                                <span className="text-gray-800 font-medium font-mono text-sm md:text-base">example@gmail.com</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 group-hover:text-yellow-500 transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="m9 18 6-6-6-6"/>
                                 </svg>
