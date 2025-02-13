@@ -13,6 +13,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import RidePicker from "./components/ui/RidePicker";
 import Wallet from "./pages/Wallet";
+import Account from "./pages/Account";
+import History from "./pages/History";
+
 
 
 
@@ -65,7 +68,19 @@ function App() {
         {
           path: "/wallet",
           element:<Wallet />
+        },
+        {
+          path: "/Account",
+          element: <Account />
+        },
+        {
+          path: "/History",
+          element: <History />
         }
+       
+
+        
+
       ],
     },
   ]);
