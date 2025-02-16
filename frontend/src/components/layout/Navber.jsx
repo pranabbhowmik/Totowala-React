@@ -12,9 +12,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-10 w-12" />
-          <span className="text-xl invisible sm:visible font-semibold font-robotoMono">
-            Toto Wala
-          </span>
+        
         </div>
 
         {/* Mobile menu button */}
