@@ -35,7 +35,7 @@ const About = () => {
         <div className="w-full md:w-1/2 h-[300px] md:h-auto">
           <img
             src={aboutimg}
-            alt="Delivery vehicles in warehouse"
+            alt="Toto Wala - Affordable Rides & Delivery"
             className="w-full h-full object-cover"
           />
         </div>
@@ -64,7 +64,7 @@ const About = () => {
           <div className="text-center">
             <img
               src={visionImage}
-              alt="Our Vision"
+              alt="Toto Wala - Affordable Rides & Delivery || Vision"
               className="w-full max-w-[400px] mx-auto object-cover rounded-md"
             />
             <h2 className="text-2xl font-bold mt-4">Our Vision</h2>
@@ -80,7 +80,7 @@ const About = () => {
           <div className="text-center">
             <img
               src={missionImage}
-              alt="Our Mission"
+              alt="Toto Wala - Affordable Rides & Delivery || Mission"
               className="w-full max-w-[400px] mx-auto object-cover rounded-md"
             />
             <h2 className="text-2xl font-bold mt-4">Our Mission</h2>

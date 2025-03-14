@@ -18,7 +18,11 @@ const Login = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-ful">
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center bg-[#FFFF25] p-6  text-center">
-          <img src={logo} alt="Logo" className="h-12 w-auto mb-4" />
+          <img
+            src={logo}
+            alt="Toto Wala - Affordable Rides & Delivery || Logo"
+            className="h-12 w-auto mb-4"
+          />
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
             Log In for Totowala
           </h1>
@@ -26,7 +30,7 @@ const Login = () => {
             <button className="w-full flex items-center justify-center py-2 mb-4 bg-white hover:bg-black hover:text-white text-gray-800 font-medium shadow rounded-lg">
               <img
                 src="https://img.icons8.com/color/48/google-logo.png"
-                alt="Google"
+                alt="Toto Wala - Affordable Rides & Delivery || Google"
                 className="w-5 h-5 mr-2"
               />
               Login with Google
@@ -34,7 +38,7 @@ const Login = () => {
             <button className="w-full flex items-center justify-center py-2 bg-blue-600 text-white font-medium shadow rounded-lg ">
               <img
                 src="https://img.icons8.com/ios-filled/50/facebook-new.png"
-                alt="Facebook"
+                alt="Toto Wala - Affordable Rides & Delivery || Facebook"
                 className="w-5 h-5 mr-2"
               />
               Login with Facebook

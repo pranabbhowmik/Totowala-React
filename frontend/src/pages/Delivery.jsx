@@ -85,7 +85,7 @@ const Delivery = () => {
         <div className="w-full md:w-1/2 h-[300px] md:h-auto">
           <img
             src={delivery}
-            alt="Delivery vehicles in warehouse"
+            alt="Toto Wala - Affordable Rides & Delivery|| Delivery"
             className="w-full h-full object-cover"
           />
         </div>
@@ -183,7 +183,7 @@ const Delivery = () => {
               <div className="mx-auto mb-4 h-16 w-16">
                 <img
                   src={india}
-                  alt="D2C Brands"
+                  alt="Toto Wala - Affordable Rides & Delivery"
                   className="h-16 w-16 mx-auto"
                 />
               </div>
@@ -197,7 +197,7 @@ const Delivery = () => {
               <div className="mx-auto mb-4 h-16 w-16">
                 <img
                   src={small}
-                  alt="Small & Medium Enterprises"
+                  alt="Toto Wala - Affordable Rides & Delivery|| Small & medium enterprises"
                   className="h-16 w-16 mx-auto"
                 />
               </div>
@@ -211,7 +211,7 @@ const Delivery = () => {
               <div className="mx-auto mb-4 h-16 w-16">
                 <img
                   src={market}
-                  alt="Market Place"
+                  alt="Toto Wala - Affordable Rides & Delivery|| Market Place"
                   className="h-16 w-16 mx-auto"
                 />
               </div>
@@ -225,7 +225,7 @@ const Delivery = () => {
               <div className="mx-auto mb-4 h-16 w-16">
                 <img
                   src={shop}
-                  alt="Shop Keepers"
+                  alt="Toto Wala - Affordable Rides & Delivery|| Shop keepers"
                   className="h-16 w-16 mx-auto"
                 />
               </div>
@@ -239,7 +239,7 @@ const Delivery = () => {
               <div className="mx-auto mb-4 h-16 w-16">
                 <img
                   src={deliveryboy}
-                  alt="Personal Shipping"
+                  alt="Toto Wala - Affordable Rides & Delivery|| Personal Shipping"
                   className="h-16 w-16 mx-auto"
                 />
               </div>
@@ -253,7 +253,7 @@ const Delivery = () => {
               <div className="mx-auto mb-4 h-16 w-16">
                 <img
                   src={social}
-                  alt="Social Media Support"
+                  alt="Toto Wala - Affordable Rides & Delivery|| Social media support"
                   className=" w-full h-10 mx-auto"
                 />
               </div>

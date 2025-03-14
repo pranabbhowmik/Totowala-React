@@ -84,7 +84,7 @@ const Help = () => {
           <div className="mt-6 flex-1 lg:mt-0">
             <img
               src={girl}
-              alt="Person using a smartphone"
+              alt="Toto Wala - Affordable Rides & Delivery"
               className="h-auto w-full rounded-lg object-cover"
             />
           </div>

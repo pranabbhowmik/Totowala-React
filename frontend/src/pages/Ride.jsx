@@ -71,7 +71,7 @@ const Ride = () => {
         <div className="mb-16">
           <img
             src={waitingimage}
-            alt="Auto rickshaw service illustration"
+            alt="Toto Wala - Affordable Rides & Delivery"
             className="w-full max-w-3xl mx-auto h-auto"
           />
         </div>
@@ -176,7 +176,7 @@ const Ride = () => {
               <div className="rounded-full p-4 inline-block mb-4  ml-0 sm:ml-5">
                 <img
                   src={passlogo}
-                  alt="Toto Pass Logo"
+                  alt="Toto Wala - Affordable Rides & Delivery || Toto Pass"
                   className="h-24 sm:h-28 md:h-32 lg:h-36"
                 />
               </div>
@@ -192,12 +192,12 @@ const Ride = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1 w-full">
               <img
                 src={pass1}
-                alt="Toto Pass Image 1"
+                alt="Toto Wala - Affordable Rides & Delivery || Toto Pass Image 1"
                 className="rounded-lg shadow-md hover:scale-105 transition-transform"
               />
               <img
                 src={pass2}
-                alt="Toto Pass Image 2"
+                alt="Toto Wala - Affordable Rides & Delivery || Toto Pass Image 2"
                 className="rounded-lg shadow-md hover:scale-105 transition-transform"
               />
             </div>

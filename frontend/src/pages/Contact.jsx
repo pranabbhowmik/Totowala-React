@@ -37,7 +37,11 @@ const Contact = () => {
           </p>
         </div>
         <div className="w-full max-w-sm md:max-w-md">
-          <img src={contact} alt="Contact Support" className="w-full h-auto" />
+          <img
+            src={contact}
+            alt="Toto Wala - Affordable Rides & Delivery || Contact Us"
+            className="w-full h-auto"
+          />
         </div>
       </div>
 
@@ -202,7 +206,7 @@ const Contact = () => {
                 {/* World Map Image */}
                 <img
                   src={world}
-                  alt="World Map"
+                  alt="Toto Wala - Affordable Rides & Delivery || Contact Us"
                   className="w-full opacity-30 bg-black rounded-2xl shadow-lg"
                 />
               </div>

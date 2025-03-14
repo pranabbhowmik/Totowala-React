@@ -73,4 +73,23 @@ const logout = async (req, res) => {
   }
 };
 
-export { register, login, logout };
+// delete user
+const deleteUser = async (req, res) => {
+  try {
+    if (!req.user || !req.user.id) {
+      return res.status(400).json({ message: "User is not authenticated" });
+    }
+
+    const user = await User.findByIdAndDelete(req.user.id);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.status(200).json({ message: "User deleted successfully" });
+  } catch (error) {
+    console.log("Error in deleteUser", error.message);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
+export { register, login, logout, deleteUser };
