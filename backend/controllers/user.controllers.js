@@ -1,4 +1,5 @@
 import User from "../models/user.model.js";
+import { sendWelcomeEmail } from "../utils/sendMail.js";
 
 // registerApi
 const register = async (req, res) => {
@@ -27,13 +28,19 @@ const register = async (req, res) => {
     });
     await newUser.save();
     const token = await newUser.generateAuthToken();
+
+    // Send welcome email
+    await sendWelcomeEmail(email, fullname);
+
     res
       .status(201)
       .json({ token, newUser, message: "User registered successfully" });
   } catch (error) {
     console.log("Error in register", error.message);
+    res.status(500).json({ message: "Registration failed" });
   }
 };
+
 // Login Api
 const login = async (req, res) => {
   try {
@@ -49,17 +56,21 @@ const login = async (req, res) => {
     }
 
     const isPasswordMatch = await user.comparePassword(password);
-
     if (!isPasswordMatch) {
       return res.status(400).json({ message: "Input the Right Password" });
     }
 
     const token = await user.generateAuthToken();
+
+    // Optional: Send welcome email on login
+    // await sendWelcomeEmail(email, user.fullname);
+
     res
       .status(200)
       .json({ token, user, message: "User logged in successfully" });
   } catch (error) {
     console.log("Error in login", error.message);
+    res.status(500).json({ message: "Login failed" });
   }
 };
 
@@ -70,6 +81,7 @@ const logout = async (req, res) => {
     res.status(200).json({ message: "User logged out successfully" });
   } catch (error) {
     console.log("Error in logout", error.message);
+    res.status(500).json({ message: "Logout failed" });
   }
 };
 
@@ -92,4 +104,18 @@ const deleteUser = async (req, res) => {
   }
 };
 
-export { register, login, logout, deleteUser };
+// get user
+const getUser = async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    res.status(200).json({ user });
+  } catch (error) {
+    console.log("Error in getUser", error.message);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
+export { register, login, logout, deleteUser, getUser };
