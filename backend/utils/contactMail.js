@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export const sendWelcomeEmail = async (toEmail, userName) => {
+export const sendContactmail = async (toEmail, userName) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -14,24 +14,24 @@ export const sendWelcomeEmail = async (toEmail, userName) => {
     to: toEmail,
     subject: "Welcome to Totowalal!",
     html: `<div style="font-family: 'Roboto Mono', monospace; background-color: #FFFFFF;">
-  <div style="max-width: 800px; margin: auto; background-color: #FFFF00; border: 2px solid #000; border-radius: 16px; padding: 40px 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="max-width: 2000px; margin: auto; background-color: yellow; border: 2px solid #000; border-radius: 16px; padding: 20px 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
 
-    <!-- Header with Emoji -->
+    <!-- Header -->
     <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 30px; color: #000;">
-      🚕 Welcome to Totowala, ${userName}!
+      📬 Thanks for Reaching Out!
     </div>
 
     <!-- Message -->
     <p style="font-size: 16px; color: #111; line-height: 1.6; text-align: center;">
-      Your account has been successfully created🎉🎉🎊.<br />
-      We’re thrilled to have you with us in the Totowala family. Now you can book e-rickshaws with just a few taps.
+      Hello ${userName},<br />
+      We’ve received your message and our team is on it 🚀. Thank you for contacting Totowala!
     </p>
 
     <p style="font-size: 15px; color: #111; text-align: center; margin-top: 10px;">
-      Ready to get started? Just click below.
+      We typically respond within 24 hours. If it’s urgent, feel free to mention “URGENT” in the subject line and resend the query.
     </p>
 
-    <!-- 3D Button -->
+    <!-- CTA Button -->
     <div style="text-align: center; margin: 35px 0;">
       <a href="https://toto-wala.onrender.com" target="_blank" style="
         background-color: #000;
@@ -45,13 +45,13 @@ export const sendWelcomeEmail = async (toEmail, userName) => {
         box-shadow: 0 4px #222;
         display: inline-block;
       ">
-        🚀 Book Your Ride
+        🔁 Back to Totowala
       </a>
     </div>
 
     <!-- Footer -->
     <p style="font-size: 12px; color: #444; text-align: center;">
-      Didn’t sign up for Totowala? You can safely ignore this email.
+      This is an automated confirmation. For anything else, feel free to reply to this email.
     </p>
 
   </div>
