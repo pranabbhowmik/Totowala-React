@@ -5,7 +5,7 @@ const Account = () => {
   const [notifications, setNotifications] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-white py-8 px-4 font-robotoMono">
+    <div className="min-h-[55rem] bg-gradient-to-br from-amber-50 to-white py-8 px-4 font-robotoMono">
       <div className="w-full max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
         {/* Profile Section */}
         <div className="p-6 bg-amber-50">
