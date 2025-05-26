@@ -5,7 +5,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 const Applayout = () => {
   const location = useLocation();
-  const hideFooterRoutes = ["/account"];
+  const hideFooterRoutes = ["/account", "/captain-home"];
   const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
 
   return (

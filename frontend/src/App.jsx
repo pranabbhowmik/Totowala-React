@@ -16,6 +16,7 @@ import Account from "./pages/Account";
 import History from "./pages/History";
 import Applayout from "./components/layout/Applayout";
 import "./App.css";
+import CaptainHome from "./pages/CaptainHome";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
       { path: "/wallet", element: <Wallet /> },
       { path: "/account", element: <Account /> },
       { path: "/history", element: <History /> },
+      { path: "/captain-home", element: <CaptainHome /> },
     ],
   },
 ]);
