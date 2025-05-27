@@ -48,7 +48,6 @@ const Bookride = () => {
     {
       captain: {
         fullname: { firstname: "Toto Driver 1", lastname: "Singh" },
-        vehicle: { plate: "WB-1234" },
       },
       pickup: pickup || "562/11-A",
       destination: destination || "562/11-B",
@@ -58,7 +57,6 @@ const Bookride = () => {
     {
       captain: {
         fullname: { firstname: "Toto Driver 2", lastname: "Sharma" },
-        vehicle: { plate: "WB-5678" },
       },
       pickup: pickup || "562/11-A",
       destination: destination || "562/11-B",
@@ -68,7 +66,6 @@ const Bookride = () => {
     {
       captain: {
         fullname: { firstname: "Toto Driver 3", lastname: "Verma" },
-        vehicle: { plate: "WB-9012" },
       },
       pickup: pickup || "562/11-A",
       destination: destination || "562/11-B",
@@ -78,7 +75,6 @@ const Bookride = () => {
     {
       captain: {
         fullname: { firstname: "Toto Driver 4", lastname: "Yadav" },
-        vehicle: { plate: "WB-3456" },
       },
       pickup: pickup || "562/11-A",
       destination: destination || "562/11-B",
