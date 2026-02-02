@@ -63,7 +63,7 @@ const login = async (req, res) => {
     const token = await user.generateAuthToken();
 
     // Optional: Send welcome email on login
-    // await sendWelcomeEmail(email, user.fullname);
+    await sendWelcomeEmail(email, user.fullname);
 
     res
       .status(200)
